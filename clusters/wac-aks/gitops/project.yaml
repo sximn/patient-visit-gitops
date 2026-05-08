@@ -1,0 +1,12 @@
+apiVersion: wac-fiit.github.io/v1alpha1
+kind: Project
+metadata:
+  name: sukus-patient-visit
+spec:
+  title: Dokumentácia návštev pacientov
+  description: Správa dokumentácie pacientov pri návšteve ambulancie
+  authors: "Šimon Ukuš"
+  azureLink: "https://sukus-patient-visits.azurewebsites.net/"
+  frontendRepoUrl: "https://github.com/sximn/patient-visit-fe"
+  backendRepoUrl: "https://github.com/sximn/patient-visit-be"
+  gitopsRepoUrl: "https://github.com/sximn/patient-visit-gitops"
