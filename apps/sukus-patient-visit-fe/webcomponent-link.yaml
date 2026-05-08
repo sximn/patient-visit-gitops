@@ -7,14 +7,16 @@ spec:
   element: polyfea-md-app # element, ktorý bude vložený na stránku
   attributes: # atribúty elementu polyfea-md-app
     - name: headline
-      value: Dokumentácia návšetv pacientov
+      value: Dokumentácia návštev pacientov
     - name: short-headline
-      value: Dokumentácia návšetv pacientov
+      value: Dokumentácia návštev pacientov
     - name: supporting-text
       value: |
         Správa dokumentácie pacientov pri návšteve ambulancie
     - name: material-icon
-      value: home_health
+      value: clinical_notes
+    - name: tile-img-src
+      value: https://live.staticflickr.com/4247/34469774894_70436ef340_h.jpg
     - name: href # presmerovanie po kliknutí na element polyfea-md-app
       value: ./sukus-patient-visit
   priority: 10
