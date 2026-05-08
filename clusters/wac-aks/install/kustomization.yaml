@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: wac-hospital
+
+labels:
+- pairs:
+    app.kubernetes.io/part-of: wac-hospital
+    app.kubernetes.io/name: sukus-patient-visit
+    wac-fiit.github.io/project: sukus-patient-visit
+  includeSelectors: true
+  includeTemplates: true
+
+resources:
+- ../../../apps/sukus-patient-visit-fe
+- ../../../apps/sukus-patient-visit-be
+
+
+components:
+- ../../../components/version-release

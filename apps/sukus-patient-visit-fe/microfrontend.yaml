@@ -1,0 +1,9 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: MicroFrontend
+metadata:
+  name: sukus-patient-visit-fe
+spec:
+  frontendClass: md-shell # default obsiahnutý v základe polyfea md-shell
+  service:
+    name: sukus-patient-visit-fe # referencia na službu odkiaľ sa má načítať modul
+  modulePath: sukus-patient-visit-documentation-app.js # cesta v rámci služby kde sa modul nachádza

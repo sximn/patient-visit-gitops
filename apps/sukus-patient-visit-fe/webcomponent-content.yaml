@@ -1,0 +1,18 @@
+apiVersion: polyfea.github.io/v1alpha1
+kind: WebComponent
+metadata:
+  name: sukus-patient-visit-fe-content
+spec:
+  microFrontend: sukus-patient-visit-fe
+  element: sukus-patient-visit-documentation-app
+  attributes:
+    - name: base-path
+      value: ./sukus-patient-visit/
+    - name: api-base
+      value: /sukus-patient-visit-api
+  #   - name: ambulance-id
+  #     value: bobulova
+  displayRules:
+    - allOf:
+      - context-name: main-content
+      - path: "^(\\.?/)?sukus-patient-visit(/.*)?$"

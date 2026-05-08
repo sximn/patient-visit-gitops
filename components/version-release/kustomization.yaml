@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1alpha1
+kind: Component
+images:
+- name: xukus/patient-visit-fe
+  newName: xukus/patient-visit-fe
+  newTag: 1.0.0
+- name: xukus/patient-visit-be
+  newName: xukus/patient-visit-be
+  newTag: 1.0.1
